@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to Our Website</h1>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header1">
+      <div class="header-content">
+        <h1>Pet Information Corp</h1>
         <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
+          <ul>
+            <li><a id="home" href="home.html">Home</a></li>
+            <li>
+              <a id="petInformation" href="petInformation.html"
+                >Pet Information</a
+              >
+            </li>
+            <li><a id="vetsNearMe" href="vetsNearMe.html">Vets Near Me</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
 
     <main>
-        <p>This is the main content of the webpage.</p>
-        <p>Feel free to add more content here.</p>
+      <section class="petInfo">
+        <h2>Pet Information</h2>
+        <p>
+          This is the main content of the pet information section. Feel free to
+          add more content here.
+        </p>
+        <!-- Add an image here -->
+        <img src="/Files/kitten1.jpg" height="200px" width="200px" alt="Pet" />
+        <img src="/Files/dog1.jpg" height="200px" width="200px" alt="Pet2" />
+      </section>
+      <section class="vetsNearMe">
+        <h2>Vets Near Me</h2>
+        <p>Implement new vet facilities here</p>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; CSC 642/842 Group Project. All rights reserved.</p>
+      <p>&copy; CSC 642/842 Group Project. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
