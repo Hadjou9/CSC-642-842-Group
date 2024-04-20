@@ -1,0 +1,19 @@
+
+        /* CSS styles for header */
+        header {
+            background-color: #218fc4;
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+        }
+
+        /* CSS styles for footer */
+        footer {
+            background-color:#218fc4;
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
