@@ -37,15 +37,51 @@ footer {
   width: 100%;
 }
 
+
+
 .petInfo {
-  background-color: #f5f5f5;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
+  background-color:lightgrey;
+  padding: 3%;
+  margin: 15px 0;
+
+  border: 4px #d1bd09;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: #d1bd09;
+ 
+  
 }
 
 .petInfo h2 {
   color: #a87c03;
+  
+}
+
+.boxes{
+  display: inline-flex;
+  text-wrap: nowrap;
+
+  /*
+  this border is temporary only
+
+  border-style: solid;
+  border-radius: 1px;
+  border-color: green;
+  */
+
+}
+
+.pet {
+  display: inline-flex;
+  padding-left: 40%;
+
+  /* this Border is temporary only*/
+  border-style: solid;
+  border-color: teal;
+}
+
+.mainPetInfo {
+  padding-bottom: 2.2%; 
 }
 
 /* Style for pet info */
