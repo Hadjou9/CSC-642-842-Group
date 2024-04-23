@@ -1,6 +1,6 @@
 # CSC-642-842-Group
 
-# Names: Ali Almusawi,
+# Names: Ali Almusawi, Kao Saephan, 
 
 # Pet Design Interface
 
