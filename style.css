@@ -75,9 +75,12 @@ footer {
   display: inline-flex;
   padding-left: 40%;
 
-  /* this Border is temporary only*/
+  /* this Border is temporary only
+  
   border-style: solid;
   border-color: teal;
+  */
+  
 }
 
 .mainPetInfo {
