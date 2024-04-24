@@ -315,6 +315,13 @@ footer {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+#title{
+  border: #deeedb solid;
+font-style: oblique;
+background-color: antiquewhite;
+width: fit-content;
+}
+
 /*
 
 Style for both pet information and vets near me, both are merged together
