@@ -60,7 +60,7 @@ footer {
 .boxes{
   display: inline-flex;
   text-wrap: nowrap;
-
+  text-align: center;
   /*
   this border is temporary only
 
@@ -72,14 +72,74 @@ footer {
 }
 
 .pet {
-  display: inline-flex;
-  padding-left: 40%;
+  display: inline-flexbox;
+  padding: 10%;
+  
+  vertical-align: text-bottom;
+  
 
   /* this Border is temporary only
-  
   border-style: solid;
   border-color: teal;
+  
   */
+  
+  
+}
+
+.greenBlock {
+  width: 100%;
+  height: 50%;
+  text-align:center;
+  padding-top: 70%;
+  background-color: green;
+  text-indent: 0em;
+
+  
+}
+
+.yellowBlock{
+  width: 100%;
+  height: 50%;
+  text-align:center;
+  padding-top: 85%;
+  background-color: darkgoldenrod;
+  text-indent: 0em;
+
+}
+
+.redBlock{
+  width: 100%;
+  height: 50%;
+  text-align:center;
+  padding-top: 85%;
+  background-color: darkred;
+  text-indent: 0em;
+}
+
+.textBlock{
+  text-wrap:balance;
+  width: 100%;
+  height: 50%;
+  text-align:center;
+  padding-top: 25%;
+ 
+  text-indent: 0em;
+}
+
+.currentBar {
+  text-align: right;
+  vertical-align: baseline;
+  height: 100%;
+  color: white;
+
+}
+
+.activity {
+  vertical-align: baseline;
+  width: 50%;
+  background-color: blue;
+  
   
 }
 
