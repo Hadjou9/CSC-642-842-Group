@@ -37,10 +37,8 @@ footer {
   width: 100%;
 }
 
-
-
 .petInfo {
-  background-color:lightgrey;
+  background-color: lightgrey;
   padding: 3%;
   margin: 15px 0;
 
@@ -48,16 +46,13 @@ footer {
   border-style: solid;
   border-radius: 1px;
   border-color: #d1bd09;
- 
-  
 }
 
 .petInfo h2 {
   color: #a87c03;
-  
 }
 
-.boxes{
+.boxes {
   display: inline-flex;
   text-wrap: nowrap;
   text-align: center;
@@ -68,63 +63,104 @@ footer {
   border-radius: 1px;
   border-color: green;
   */
-
 }
 
 .pet {
   display: inline-flexbox;
   padding: 10%;
-  
+
   vertical-align: text-bottom;
-  
 
   /* this Border is temporary only
   border-style: solid;
   border-color: teal;
   
   */
-  
-  
 }
 
 .greenBlock {
   width: 100%;
   height: 50%;
-  text-align:center;
+  text-align: center;
   padding-top: 70%;
   background-color: green;
   text-indent: 0em;
-
-  
 }
 
-.yellowBlock{
+.yellowBlock {
   width: 100%;
   height: 50%;
-  text-align:center;
+  text-align: center;
   padding-top: 85%;
   background-color: darkgoldenrod;
   text-indent: 0em;
-
 }
 
-.redBlock{
+.redBlock {
   width: 100%;
   height: 50%;
-  text-align:center;
+  text-align: center;
   padding-top: 85%;
   background-color: darkred;
   text-indent: 0em;
 }
 
-.textBlock{
-  text-wrap:wrap;
+.textBlock {
+  text-wrap: wrap;
   width: 100%;
   height: 50%;
-  text-align:center;
+  text-align: center;
   padding-top: 25%;
- 
+
   text-indent: 0em;
+}
+
+.redBlock:hover {
+  background-color: rgb(168, 78, 78);
+  transition: background-color 0.3s ease;
+}
+
+.yellowBlock:hover {
+  background-color: rgb(207, 173, 105);
+  transition: background-color 0.3s ease;
+}
+
+.greenBlock:hover {
+  background-color: rgb(22, 167, 22);
+  transition: background-color 0.3s ease;
+}
+
+/* Adding a  hover effect to redBlock,
+ yellowBlock, and redBlock */
+
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/*
+  Shake animation when a user hovers over an image
+  to add a bit of animation to the page
+ */
+
+.petInfo img:hover {
+  animation: shake 0.5s ease;
 }
 
 .currentBar {
@@ -132,19 +168,16 @@ footer {
   vertical-align: baseline;
   height: 100%;
   color: white;
-
 }
 
 .activity {
   vertical-align: baseline;
   width: 50%;
   background-color: blue;
-  
-  
 }
 
 .mainPetInfo {
-  padding-bottom: 2.2%; 
+  padding-bottom: 2.2%;
 }
 
 /* Style for pet info */
@@ -375,11 +408,11 @@ footer {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-#title{
+#title {
   border: #deeedb solid;
-font-style: oblique;
-background-color: antiquewhite;
-width: fit-content;
+  font-style: oblique;
+  background-color: antiquewhite;
+  width: fit-content;
 }
 
 /*
@@ -387,4 +420,55 @@ width: fit-content;
 Style for both pet information and vets near me, both are merged together
 since they both have the same style (color scheme, hover effect, etc.)
 
+*/
+
+#logout {
+  background-color: #218fc4;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  text-decoration: none;
+  position: relative;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#logout::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: #d1bd09;
+  border-radius: 50%;
+  transition: width 0.3s ease, height 0.3s ease;
+  z-index: -1;
+}
+
+#logout:hover::before {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+}
+
+#logout:hover {
+  transform: scale(1.05);
+}
+
+#logout {
+  transition: transform 0.2s ease-in-out;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+#logout {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*
+  For the log out button, the same style as the other buttons
 */
