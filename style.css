@@ -118,7 +118,7 @@ footer {
 }
 
 .textBlock{
-  text-wrap:balance;
+  text-wrap:wrap;
   width: 100%;
   height: 50%;
   text-align:center;
