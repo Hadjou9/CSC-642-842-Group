@@ -71,6 +71,13 @@ footer {
 
 }
 
+.rightBoxes {
+  display: inline-flex;
+  text-wrap: nowrap;
+  text-align: center;
+  
+}
+
 .pet {
   display: inline-flexbox;
   padding: 10%;
