@@ -1,21 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <li><a id="home" href="home.html">Home</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vets Near Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header1">
+        <div class="header-content">
+            <h1>Pet Information Corp</h1>
+            <nav>
+                <ul>
+                    <li><a id="home" href="home.html">Home</a></li>
+                    <li><a id="petInformation" href="petInformation.html">Pet Information</a></li>
+                    <li><a id="vetsNearMe" class="active" href="vetsNearMe.html">Vets Near Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <main>
-        <p id = "title">
-            Vets Near Me page
-        </p>
+    <main class="vetsNearMe">
+        <h2 id="title">Vets Near Me</h2>
+        <ul class="vetList">
+            <li class="vetItem">
+                <strong>Paws & Claws Veterinary Clinic</strong> - 4.5 stars<br>
+                123 Folsom St, San Francisco, CA 94103
+                <div class="buttons">
+                    <button class="callButton">Call</button>
+                    <button class="directionsButton">Get Directions</button>
+                </div>
+            </li>
+            <li class="vetItem">
+                <strong>Urban Animal Hospital</strong> - 4.8 stars<br>
+                456 Mission St, San Francisco, CA 94105
+                <div class="buttons">
+                    <button class="callButton">Call</button>
+                    <button class="directionsButton">Get Directions</button>
+                </div>
+            </li>
+            <li class="vetItem">
+                <strong>Happy Pets Veterinary Center</strong> - 4.2 stars<br>
+                789 Castro St, San Francisco, CA 94114
+                <div class="buttons">
+                    <button class="callButton">Call</button>
+                    <button class="directionsButton">Get Directions</button>
+                </div>
+            </li>
+            <li class="vetItem">
+                <strong>Healing Paws Vet Clinic</strong> - 4.6 stars<br>
+                101 Market St, San Francisco, CA 94105
+                <div class="buttons">
+                    <button class="callButton">Call</button>
+                    <button class="directionsButton">Get Directions</button>
+                </div>
+            </li>
+            <li class="vetItem">
+                <strong>The Pet Health and Wellness Center</strong> - 4.7 stars<br>
+                202 Van Ness Ave, San Francisco, CA 94102
+                <div class="buttons">
+                    <button class="callButton">Call</button>
+                    <button class="directionsButton">Get Directions</button>
+                </div>
+            </li>
+        </ul>
     </main>
-<footer>
+
+    <footer>
         <p>&copy; CSC 642/842 Group Project. All rights reserved.</p>
-      </footer>
-    </body>
-  </html>
+    </footer>
+</body>
+</html
