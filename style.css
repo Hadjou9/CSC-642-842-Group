@@ -69,7 +69,6 @@ footer {
   display: inline-flex;
   text-wrap: nowrap;
   text-align: center;
-  
 }
 
 .pet {
@@ -476,8 +475,55 @@ since they both have the same style (color scheme, hover effect, etc.)
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-
-
 /*
   For the log out button, the same style as the other buttons
 */
+
+#petInfoText {
+  background-color: #218fc4;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+#petInfoText::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: #d1bd09;
+  border-radius: 50%;
+  transition: width 0.3s ease, height 0.3s ease;
+  z-index: -1;
+}
+
+#petInfoText:hover::before {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+}
+
+#petInfoText:hover {
+  transform: scale(1.05);
+}
+
+#petInfoText {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*
+ Trying to give space for the image and the
+text Detailed Pet Information text
+*/
+
+.petDetail h2 {
+  margin-bottom: 20px;
+}
