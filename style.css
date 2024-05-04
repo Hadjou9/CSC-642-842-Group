@@ -527,3 +527,31 @@ text Detailed Pet Information text
 .petDetail h2 {
   margin-bottom: 20px;
 }
+
+.span0, .span1{
+  background-color: #218fc4;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+
+.span1:focus ~ .alert {
+  color: lightgrey
+}
+.span0:focus ~ .alert {
+  color: black
+}
+
+.alert{
+  padding-left: 120%;
+  
+  color: lightgrey;
+ 
+}
+
