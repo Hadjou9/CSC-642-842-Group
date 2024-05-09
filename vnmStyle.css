@@ -1,0 +1,117 @@
+body {
+    background-image: url('./Files/backround.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    height: 650px;
+}
+main{
+    display: flex;
+    margin: 5px 0px 2px 0px;
+}
+
+.map {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    margin-left: 400px;
+    position: fixed;
+}
+.map form {
+    position: absolute; /* Absolute positioning for the form */
+    top: 0; /* Place the form at the top of the container */
+    left: 50%; /* Place the form horizontally centered */
+    transform: translateX(-50%); /* Adjust horizontally to center the form */
+padding: 10px;
+width: 60%;
+}
+.map img {
+    display: block;
+    max-width: 100%;
+    min-height: 400px;
+    max-height: 500px;
+    width: 100%;
+    }
+input[type="text"] {
+    padding: 10px; /* Add padding to the input */
+    width: 60%; /* Set a specific width for the input */
+    border: 1px solid #9197d2;
+    border-radius: 5px; /* Add border radius for rounded corners */
+    font-size: 16px; /* Set the font size */
+    outline: none; /* Remove the default outline */
+}
+button[type="submit"] {
+    position:fixed;
+    padding: 10px; /* Add padding to the input */
+    width: 10%; /* Set a specific width for the input */
+    border: 1px solid #9197d2;
+    border-radius: 5px; /* Add border radius for rounded corners */
+    font-size: 16px; /* Set the font size */
+    outline: none; /* Remove the default outline */
+    background-color: rgb(214, 221, 227);
+}
+.vetList{
+    margin: 20px 20px 20px 20px;
+}
+#myVets{
+    background-color: #d8d9de;
+}
+.vetItem{
+    margin: 10px 1px 15px 1px;
+}
+
+
+footer {
+    background-color: #218fc4;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+
+    #header1 {
+        background-color: #a87c03;
+        border-radius: 50%;
+        width: 340px;
+       /* height: 340px;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        margin: auto;
+        }
+
+        .header-content {
+            text-align: center;
+            }
+
+            #header1 #petInformation {
+                color: #333;
+                text-decoration: none;
+                padding: 5px;
+                gap: 12px;
+                }
+            #header1 #home{
+                
+                    color: #333;
+                    text-decoration: none;
+                    padding: 5px;
+                    gap: 12px;
+                
+            }
+
+            #header1 ul > li{
+                border: rgb(140, 158, 84) solid;
+                margin-top: 15px;
+                background-color: #218fc4;
+                border-radius: 12px;
+                text-decoration: none;
+                list-style: none;
+
+
+
+            }
