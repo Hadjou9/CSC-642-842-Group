@@ -4,6 +4,6 @@
 
 # Pet Design Interface
 
-# To run:
+# To run: Run in browser
 
-# Run from local host
+# Run from local host: Run in browser
